@@ -1,0 +1,43 @@
+module AU (w0,w1,w2,w3,s,f);
+	input [4:0]DataIn, R0In;
+	input[2:0]s;
+	output [4:0]DataOut;
+	reg [4:0]DataOut;
+	
+	always@(DataIn, R0In,s)
+		begin
+			case(s)
+			if 3'b000
+				then DataOut[0] = 0, DataOut[1] = 1, DataOut[2] = 2, DataOut[3] = 3;
+				end if
+			
+			3'b001:DataOut[0] = 0;
+			
+			3'b010:DataOut[0] = 0;
+			
+			3'b011:DataOut[0] = 0;
+			
+			3'b100:DataOut[0] = 0;
+			
+			3'b101:DataOut[0] = 0;
+			
+			3'b110:DataOut[0] = 0;
+			
+			3'b111:DataOut[0] = 0;
+			
+			endcase
+		end
+endmodule
+	
+	
+	// A = multiplicand
+	// B = multiplier
+	
+//	P = 0;
+//	for i = 0 to n-1 do    //n = # of bits
+//		if b = 1 then
+//			p = p + a;
+//		end if;
+//		left-shift a;
+//	end for;
+		

@@ -1,0 +1,147 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 2018  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel FPGA IP License Agreement, or other applicable license
+# agreement, including, without limitation, that your use is for
+# the sole purpose of programming logic devices manufactured by
+# Intel and sold by Intel or its authorized distributors.  Please
+# refer to the applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 18.0.0 Build 614 04/24/2018 SJ Standard Edition
+# Date created = 20:09:05  April 30, 2019
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		Final_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone IV E"
+set_global_assignment -name DEVICE EP4CE115F29C7
+set_global_assignment -name TOP_LEVEL_ENTITY StateMachine
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 18.0.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "20:09:05  APRIL 30, 2019"
+set_global_assignment -name LAST_QUARTUS_VERSION "18.0.0 Standard Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
+set_global_assignment -name VERILOG_FILE seven_seg_decoder.v
+set_global_assignment -name BDF_FILE Final.bdf
+set_global_assignment -name BDF_FILE Block2.bdf
+set_global_assignment -name VERILOG_FILE bod_converter.v
+set_global_assignment -name BDF_FILE HexOutput.bdf
+set_global_assignment -name BDF_FILE 4bitadder.bdf
+set_global_assignment -name BDF_FILE full_adder.bdf
+set_global_assignment -name BDF_FILE RegisterToHex.bdf
+set_global_assignment -name BDF_FILE Register.bdf
+set_location_assignment PIN_Y23 -to Clear
+set_location_assignment PIN_Y2 -to Clock
+set_global_assignment -name BDF_FILE mux4to1.bdf
+set_global_assignment -name VERILOG_FILE ../Lab08/mux4to1/mux4to1.v
+set_global_assignment -name VERILOG_FILE mux4to1.v
+set_global_assignment -name BDF_FILE RegisterFile.bdf
+set_global_assignment -name VERILOG_FILE output_files/mux1to4.v
+set_global_assignment -name BDF_FILE output_files/2to4.bdf
+set_global_assignment -name BDF_FILE Masheen.bdf
+set_location_assignment PIN_M24 -to OutLeft0[0]
+set_location_assignment PIN_Y22 -to OutLeft0[1]
+set_location_assignment PIN_W21 -to OutLeft0[2]
+set_location_assignment PIN_W22 -to OutLeft0[3]
+set_location_assignment PIN_W25 -to OutLeft0[4]
+set_location_assignment PIN_U23 -to OutLeft0[5]
+set_location_assignment PIN_U24 -to OutLeft0[6]
+set_location_assignment PIN_V21 -to OutLeft1[0]
+set_location_assignment PIN_U21 -to OutLeft1[1]
+set_location_assignment PIN_AB20 -to OutLeft1[2]
+set_location_assignment PIN_AA21 -to OutLeft1[3]
+set_location_assignment PIN_AD24 -to OutLeft1[4]
+set_location_assignment PIN_AF23 -to OutLeft1[5]
+set_location_assignment PIN_Y19 -to OutLeft1[6]
+set_location_assignment PIN_AD18 -to OutLeft2[0]
+set_location_assignment PIN_AC18 -to OutLeft2[1]
+set_location_assignment PIN_AB18 -to OutLeft2[2]
+set_location_assignment PIN_AH19 -to OutLeft2[3]
+set_location_assignment PIN_AG19 -to OutLeft2[4]
+set_location_assignment PIN_AF18 -to OutLeft2[5]
+set_location_assignment PIN_AH18 -to OutLeft2[6]
+set_location_assignment PIN_AD17 -to OutLeft3[0]
+set_location_assignment PIN_AE17 -to OutLeft3[1]
+set_location_assignment PIN_AG17 -to OutLeft3[2]
+set_location_assignment PIN_AH17 -to OutLeft3[3]
+set_location_assignment PIN_AF17 -to OutLeft3[4]
+set_location_assignment PIN_AG18 -to OutLeft3[5]
+set_location_assignment PIN_AA14 -to OutLeft3[6]
+set_location_assignment PIN_G18 -to OutRight0[0]
+set_location_assignment PIN_F22 -to OutRight0[1]
+set_location_assignment PIN_E17 -to OutRight0[2]
+set_location_assignment PIN_L26 -to OutRight0[3]
+set_location_assignment PIN_L25 -to OutRight0[4]
+set_location_assignment PIN_J22 -to OutRight0[5]
+set_location_assignment PIN_H22 -to OutRight0[6]
+set_location_assignment PIN_AA25 -to OutRight1[0]
+set_location_assignment PIN_AA26 -to OutRight1[1]
+set_location_assignment PIN_Y25 -to OutRight1[2]
+set_location_assignment PIN_W26 -to OutRight1[3]
+set_location_assignment PIN_Y26 -to OutRight1[4]
+set_location_assignment PIN_W27 -to OutRight1[5]
+set_location_assignment PIN_W28 -to OutRight1[6]
+set_location_assignment PIN_AB19 -to OutRight2[0]
+set_location_assignment PIN_AA19 -to OutRight2[1]
+set_location_assignment PIN_AG21 -to OutRight2[2]
+set_location_assignment PIN_AH21 -to OutRight2[3]
+set_location_assignment PIN_AE19 -to OutRight2[4]
+set_location_assignment PIN_AF19 -to OutRight2[5]
+set_location_assignment PIN_AE18 -to OutRight2[6]
+set_location_assignment PIN_AA17 -to OutRight3[0]
+set_location_assignment PIN_AB16 -to OutRight3[1]
+set_location_assignment PIN_AA16 -to OutRight3[2]
+set_location_assignment PIN_AB17 -to OutRight3[3]
+set_location_assignment PIN_AB15 -to OutRight3[4]
+set_location_assignment PIN_AA15 -to OutRight3[5]
+set_location_assignment PIN_AC17 -to OutRight3[6]
+set_location_assignment PIN_M23 -to WR
+set_global_assignment -name VERILOG_FILE ../Lab08/mux4to1/mux421.v
+set_global_assignment -name VERILOG_FILE mux41.v
+set_global_assignment -name VERILOG_FILE AU.v
+set_global_assignment -name VERILOG_FILE ALU.v
+set_global_assignment -name BDF_FILE output_files/pigshit.bdf
+set_global_assignment -name VERILOG_FILE Pigshit/ALU.v
+set_location_assignment PIN_AA22 -to K[0]
+set_location_assignment PIN_Y24 -to K[1]
+set_location_assignment PIN_AB28 -to OP[0]
+set_location_assignment PIN_AC28 -to OP[1]
+set_location_assignment PIN_AC27 -to OP[2]
+set_global_assignment -name BDF_FILE StateMasheen.bdf
+set_global_assignment -name VERILOG_FILE TwoBitUp.v
+set_global_assignment -name BDF_FILE countertest.bdf
+set_global_assignment -name BDF_FILE TwoBitCount.bdf
+set_global_assignment -name VERILOG_FILE CountEnable.v
+set_global_assignment -name VERILOG_FILE StateOutput.v
+set_global_assignment -name VERILOG_FILE StateMachine.v
+set_global_assignment -name VERILOG_FILE ../Testing/ALUtest/ALU.v
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

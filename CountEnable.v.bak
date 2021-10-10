@@ -1,0 +1,16 @@
+module CountEnable (clk,CountOut);
+	input[1:0]CountOut;
+	output clk;
+	reg clk;
+	
+	always@(clk,CountOut)
+		begin
+			case(CountOut)
+			2'b00:clk=1;
+			2'b01:clk=1;
+			2'b10:clk=1;
+			2'b11:clk=1;
+			endcase
+		end
+endmodule
+	

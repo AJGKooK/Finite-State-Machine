@@ -1,0 +1,17 @@
+module mux1to4 (f0,f1,f2,f3,s,w);
+	input w;
+	input[1:0]s;
+	output f0,f1,f2,f3;
+	reg f;
+	
+	always@(w,s)
+		begin
+			case(s)
+			2'b00:w=~f0;
+			2'b01:w=~f1;
+			2'b10:w=~f2;
+			2'b11:w=~f3;
+			endcase
+		end
+endmodule
+	
